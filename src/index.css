@@ -4,12 +4,12 @@
 :root{
   --colorPrimary: #F9F5EB;
   --colorSecondary: #1C3879;
-  --colorThrid: #607EAA;
+  --colorThird: #607EAA;
   --colorFour: #EAE3D2;
   --colorLight: #FFF;
   --colorDark: #000;
   --fontPrincipal: 'Ubuntu', sans-serif;
-  --FonsSecondary: 'Ubuntu Condensed', sans-serif;
+  --fontSecondary: 'Ubuntu Condensed', sans-serif;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--colorPrimary);
 }
 
 code {

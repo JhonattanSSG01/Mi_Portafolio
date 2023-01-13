@@ -1,0 +1,61 @@
+
+.banner{
+  width: 100%;
+  height: 480px;
+  opacity: 20%;
+  object-fit: cover;
+}
+
+.container >.containerBanner{
+  width: 100%;
+  opacity: 90%;
+  background: var(--colorSecondary);
+  z-index: 2;
+}
+
+.containerText{
+  font-family: var(--fontPrincipal);
+}
+
+.sizeText{
+  font-size: 18px;
+}
+
+.titleMuted{
+  font-size: 26px;
+  color: #D9D9D9;
+}
+
+.titleHi > span{
+  font-size: 22px;
+}
+
+.description{
+  letter-spacing: 3px;
+  font-family: var(--fontSecondary);
+}
+
+.button {
+  width: 30%;
+  margin: auto;
+  border: 3px solid var(--colorFour);
+  border-radius: 5px;
+  color: var(--colorFour);
+}
+
+.line{
+  margin: 25px auto;
+  padding: 3px;
+  border-radius: 50px;
+  opacity: 100%;
+}
+
+.lineBlue{
+  width: 90%;
+  background-color: var(--colorSecondary);
+}
+
+.lineLigthBlue{
+  width: 80%;
+  background-color: var(--colorThird);
+}
