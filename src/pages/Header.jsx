@@ -99,7 +99,7 @@ export const Header = () => {
 
         <div className="aboutMe">
           <h1 className="titlePrincipal">
-            About Me <span className="sideRigth lineTrough"></span>
+            About Me <span className="sideRight lineTrough"></span>
           </h1>
           <img
             className="mt-3 mb-3"
@@ -223,7 +223,50 @@ export const Header = () => {
             </Row>
           </TabPane>
         </TabContent>
+
+        <hr className="lineLigthBlue line" />
+
+        <div className="projects">
+          <h1 className="titlePrincipal pt-5 pb-5">
+            Projects <span className="sideRight lineTrough"></span>
+          </h1>
+        </div>
+
+        <div className="contact">
+          <h1 className="titlePrincipal pt-5 pb-5">
+            Contact <span className="sideLeft lineTrough"></span>
+          </h1>
+          <img
+            className="mt-3 mb-3"
+            src={Contact}
+            alt="Imagen alusiva para contacto"
+            width={"100%"}
+            style={{ opacity: "50%" }}
+          />
+          <h1 className="titlePrincipal pt-5 pb-5">GET IN TOUCH</h1>
+          <p className="aboutDesc p-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <div className="buttonContact">Contact Me</div>
+        </div>
+
+        <hr className="lineLigthBlue line" />
+        <hr className="lineLigthBlueC line" />
       </div>
+
+      <footer>
+        <section className='allRights'>
+          <h4>
+            ©2023 STEIBHINN - All rights reserved <br/> Designed by Jhonattan Saavedra
+          </h4>
+        </section>
+        <section className='socialMedia'>
+          <i className="ri-github-line"></i>
+          <i className="ri-linkedin-fill"></i>
+        </section>
+      </footer>
     </>
   );
 }
