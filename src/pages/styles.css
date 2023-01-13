@@ -66,22 +66,60 @@
   position: relative;
 }
 
-.titlePrincipal > span {
+.titlePrincipal > .lineTrough {
   width: 28%;
   height: 3px;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
   margin: auto;
   border-radius: 50px;
   background: var(--colorSecondary);
 }
 
-.aboutDesc{
+.sideRigth {
+  right: 0;
+}
+
+.sideLeft {
+  left: 0;
+}
+
+.aboutDesc {
   font-size: 24px;
   text-align: justify;
   color: var(--colorThird);
   letter-spacing: 3px;
   font-family: var(--fontSecondary);
+}
+
+.skills > h1 {
+  width: 100%;
+  background-color: var(--colorFour);
+}
+
+.skillsToggle {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 50px;
+}
+
+.skillsToggle section {
+  width: 100%;
+  position: relative;
+}
+
+.skillsToggle span {
+  width: 80%;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  border-radius: 50px;
+  background: var(--colorThird);
 }
