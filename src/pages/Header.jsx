@@ -1,5 +1,6 @@
 import './styles.css';
-import Logo from './assets/LogoHeader.png';
+import LogoHeader from './assets/LogoHeader.png';
+import LogoBanner from './assets/LogoBanner.png';
 import Background from './assets/banner.jpg';
 import About from './assets/aboutMe.png';
 import Contact from './assets/contact.png';
@@ -33,7 +34,7 @@ function NavHeader(props) {
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="me-auto">
-          <img src={Logo} alt="Logo personal" style={{ width: "100px" }} />
+          <img src={LogoHeader} alt="Logo personal" style={{ width: "100px" }} />
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
@@ -75,8 +76,9 @@ export const Header = () => {
     <>
       <NavHeader />
       <div className="container p-0">
-        <Card className="containerBanner" inverse>
+        <Card className="containerBanner ju" inverse>
           <CardImg className="banner" alt="Card image cap" src={Background} />
+          <CardImg className="bannerLogo" alt="Card image cap" src={LogoBanner} />
           <CardImgOverlay className="containerText pt-5 pb-5 text-center">
             <CardTitle tag="h3" className="titleHi sizeText">
               Hola Mundo, my name is <span>Jhonattan Saavedra Gómez</span>
@@ -257,12 +259,13 @@ export const Header = () => {
       </div>
 
       <footer>
-        <section className='allRights'>
+        <section className="allRights">
           <h4>
-            ©2023 STEIBHINN - All rights reserved <br/> Designed by Jhonattan Saavedra
+            ©2023 STEIBHINN - All rights reserved <br /> Designed by Jhonattan
+            Saavedra
           </h4>
         </section>
-        <section className='socialMedia'>
+        <section className="socialMedia">
           <i className="ri-github-line"></i>
           <i className="ri-linkedin-fill"></i>
         </section>
