@@ -1,0 +1,30 @@
+/* Contact */
+.contact > .titlePrincipal {
+  width: 100%;
+  background-color: var(--colorFour);
+}
+
+.contact > .contactDesc {
+  font-size: 24px;
+  text-align: justify;
+  color: var(--colorThird);
+  letter-spacing: 3px;
+  font-family: var(--fontSecondary);
+}
+
+.titleTouch{
+  text-align: center;
+  font-size: 32px;
+  color: var(--colorSecondary);
+}
+
+.buttonContact {
+  width: 80%;
+  margin: auto;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--colorThird);
+  font-size: 35px;
+  color: var(--colorFour);
+}

@@ -1,19 +1,89 @@
-.banner {
-  width: 100%;
-  height: 480px;
-  opacity: 20%;
-  object-fit: cover;
+html > body {
+  background-color: var(--colorPrimary);
 }
 
-.bannerLogo{
+.nav div{
+  padding: 0;
+}
+
+.nav .iconNav {
+  border: none;
+  outline: none;
+  font-size: 30px;
+}
+
+.nav .navCollapse {
+  background-color: var(--colorFour);
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav .iconNav {
+    display: none;
+  }
+  .nav {
+    flex-wrap: nowrap !important;
+  }
+  .nav .navCollapse {
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav .collapse:not(.show) {
+    display: block;
+  }
+  .navItem .border {
+    border: none !important;
+    margin: 0 25px;
+    font-size: 30px;
+  }
+  .navItem .resume {
+    font-size: 30px;
+  }
+}
+
+.navItem .resume {
+  width: auto;
+  border: 3px solid var(--colorSecondary);
+  border-radius: 5px;
+}
+
+/* .navItem .border{
+  width: 100px;
+  height: 40px;
+  margin: 5px auto;
+  background-color: var(--colorPrimary);
+  position: relative;
+  border: none;
+}
+
+.border::after{
+  content: '';
+  width: 104px;
+  height: 44px;
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  left: -2px;
+  background-image: linear-gradient(to left, transparent 13px, var(--colorPrimary) 13px, var(--colorPrimary) 93px, transparent 93px), 
+                    linear-gradient(var(--colorSecondary) 13px, transparent 13px, transparent 33px, var(--colorSecondary) 33px);
+} */
+
+.banner {
+  height: 480px;
+  opacity: 40%;
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+.bannerLogo {
   display: none;
 }
 
 .container > .containerBanner::before {
-  content: '';
-  width: 100%;
-  opacity: 80%;
-  background: var(--colorSecondary);
+  content: "";
+  background: #30445f;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -94,8 +164,11 @@
   width: 70%;
   background-color: var(--colorThird);
 }
-/**/
-.titlePrincipal {
+/* Lineas Generales */
+
+.aboutMe > .titlePrincipal, 
+.skills >  .titlePrincipal,
+.contact >  .titlePrincipal{
   text-align: center;
   font-size: 32px;
   color: var(--colorSecondary);
@@ -103,7 +176,7 @@
 }
 
 .titlePrincipal > .lineTrough {
-  width: 28%;
+  width: 25%;
   height: 3px;
   position: absolute;
   top: 0;
@@ -120,63 +193,14 @@
 .sideLeft {
   left: 0;
 }
+/* End Lineas Generales */
 
-.aboutDesc {
-  font-size: 24px;
-  text-align: justify;
-  color: var(--colorThird);
-  letter-spacing: 3px;
-  font-family: var(--fontSecondary);
-}
-
-.skills > h1, .contact > h1 {
-  width: 100%;
-  background-color: var(--colorFour);
-}
-
-.skillsToggle {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  font-size: 50px;
-}
-
-.skillsToggle section {
-  width: 100%;
-  position: relative;
-}
-
-.skillsToggle span {
-  width: 80%;
-  height: 35px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 10px;
-  margin: auto;
-  border-radius: 50px;
-  background: var(--colorThird);
-}
-
-.buttonContact {
-  width: 60%;
-  margin: auto;
-  padding: 8px 15px;
-  border-radius: 5px;
-  text-align: center;
-  background-color: var(--colorThird);
-  font-size: 35px;
-  color: var(--colorFour);
-}
-
-.allRights{
+.allRights {
   padding: 15px;
   text-align: center;
 }
 
-.allRights > h4{
+.allRights > h4 {
   font-size: 24px;
 }
 

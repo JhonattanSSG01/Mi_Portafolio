@@ -1,0 +1,8 @@
+
+.aboutMe > .aboutDesc {
+  font-size: 24px;
+  text-align: justify;
+  color: var(--colorThird);
+  letter-spacing: 3px;
+  font-family: var(--fontSecondary);
+}
