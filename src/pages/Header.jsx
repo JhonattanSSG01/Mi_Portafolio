@@ -21,26 +21,22 @@ export function NavHeader() {
     <>
       <header>
         <Navbar className="nav" color="faded" light>
-          <NavbarBrand href="/" className="me-auto" style={{flexBasis: '75%'}}>
-            <img
-              src={LogoHeader}
-              alt="Logo personal"
-              width={'40%'}
-            />
+          <NavbarBrand href="/" className="me-auto" style={{flexBasis: '25%'}}>
+            <img src={LogoHeader} alt="Logo personal"/>
           </NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="iconNav" />
           <Collapse className="collapses" isOpen={!collapsed} navbar>
             <Nav className="navCollapse" navbar>
-              <NavItem className="navItem">
+              <NavItem className="navItemGlobal">
                 <NavLink className="border">About</NavLink>
               </NavItem>
-              <NavItem className="navItem">
+              <NavItem className="navItemGlobal">
                 <NavLink className="border">Skills</NavLink>
               </NavItem>
-              <NavItem className="navItem">
+              <NavItem className="navItemGlobal">
                 <NavLink className="border">Projects</NavLink>
               </NavItem>
-              <NavItem className="navItem">
+              <NavItem className="navItemGlobal">
                 <NavLink className="border">Contact</NavLink>
               </NavItem>
               <NavItem className="navItem">

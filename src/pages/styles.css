@@ -2,8 +2,12 @@ html > body {
   background-color: var(--colorPrimary);
 }
 
-.nav div{
+.nav div {
   padding: 0;
+}
+
+.nav img {
+  width: 100%;
 }
 
 .nav .iconNav {
@@ -17,12 +21,32 @@ html > body {
   text-align: center;
 }
 
+.navItemGlobal .border {
+  border: none !important;
+  font-size: clamp(20px, 5vw, 30px);
+  color: var(--colorSecondary);
+}
+
+.navItem .resume {
+  width: 40%;
+  margin: auto;
+  border: 3px solid var(--colorSecondary);
+  color: var(--colorSecondary);
+  border-radius: 5px;
+  font-size: clamp(20px, 5vw, 30px);
+}
+
 @media only screen and (min-width: 600px) {
   .nav .iconNav {
     display: none;
   }
-  .nav {
-    flex-wrap: nowrap !important;
+  header .nav {
+    height: 130px;
+    padding: 20px 40px;
+    flex-wrap: nowrap ;
+  }
+  .nav img {
+    width: 70%;
   }
   .nav .navCollapse {
     background-color: transparent;
@@ -33,21 +57,22 @@ html > body {
   .nav .collapse:not(.show) {
     display: block;
   }
-  .navItem .border {
-    border: none !important;
+  .navItemGlobal, .navItem {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .navItemGlobal .border {
     margin: 0 25px;
-    font-size: 30px;
   }
   .navItem .resume {
-    font-size: 30px;
+    width: auto;
+  }
+  .navItem .resume:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorPrimary);
   }
 }
 
-.navItem .resume {
-  width: auto;
-  border: 3px solid var(--colorSecondary);
-  border-radius: 5px;
-}
 
 /* .navItem .border{
   width: 100px;
@@ -166,9 +191,9 @@ html > body {
 }
 /* Lineas Generales */
 
-.aboutMe > .titlePrincipal, 
-.skills >  .titlePrincipal,
-.contact >  .titlePrincipal{
+.aboutMe > .titlePrincipal,
+.skills > .titlePrincipal,
+.contact > .titlePrincipal {
   text-align: center;
   font-size: 32px;
   color: var(--colorSecondary);
