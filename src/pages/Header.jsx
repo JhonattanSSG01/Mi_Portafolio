@@ -1,5 +1,4 @@
 import "./styles.css";
-import LogoHeader from "../assets/LogoHeader1.png";
 import React, { useState } from "react";
 import {
   Collapse,
@@ -21,8 +20,8 @@ export function NavHeader() {
     <>
       <header>
         <Navbar className="nav" color="faded" light>
-          <NavbarBrand href="/" className="me-auto" style={{flexBasis: '25%'}}>
-            <img src={LogoHeader} alt="Logo personal"/>
+          <NavbarBrand href="/" className="me-auto" style={{width: '150px'}}>
+            <div className="logo"></div>
           </NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="iconNav" />
           <Collapse className="collapses" isOpen={!collapsed} navbar>
@@ -40,7 +39,7 @@ export function NavHeader() {
                 <NavLink className="border">Contact</NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink className="resume p-2">Resume</NavLink>
+                <NavLink className="resume">Resume</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

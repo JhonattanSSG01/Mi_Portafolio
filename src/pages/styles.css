@@ -2,12 +2,28 @@ html > body {
   background-color: var(--colorPrimary);
 }
 
+/* header{
+  position: fixed;
+  z-index: 3;
+} */
+
 .nav div {
   padding: 0;
 }
 
-.nav img {
-  width: 100%;
+.nav .logo {
+  width: 80%;
+  height: 100px;
+  background-image: url(../assets/LogoHeader.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s;
+}
+
+.nav .logo:hover {
+  background-image: url(../assets/hoverLogo.png);
+  transition: all 1s;
 }
 
 .nav .iconNav {
@@ -30,20 +46,23 @@ html > body {
 .navItem .resume {
   width: 40%;
   margin: auto;
-  border: 3px solid var(--colorSecondary);
   color: var(--colorSecondary);
+  border: 2px solid var(--colorSecondary);
   border-radius: 5px;
   font-size: clamp(20px, 5vw, 30px);
 }
 
 @media only screen and (min-width: 600px) {
+  .nav .logo {
+    width: 100%;
+  }
   .nav .iconNav {
     display: none;
   }
   header .nav {
     height: 130px;
     padding: 20px 40px;
-    flex-wrap: nowrap ;
+    flex-wrap: nowrap;
   }
   .nav img {
     width: 70%;
@@ -57,22 +76,94 @@ html > body {
   .nav .collapse:not(.show) {
     display: block;
   }
-  .navItemGlobal, .navItem {
+  .navItemGlobal,
+  .navItem {
     margin: 0 10px;
     cursor: pointer;
   }
   .navItemGlobal .border {
     margin: 0 25px;
   }
+  .border {
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+
+  .navItemGlobal .border:hover {
+    color: var(--colorSecondary);
+    transform: scale(0.9);
+    transition: all 300ms;
+  }
+
+  .border:focus:after,
+  .border:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+
+  .border:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--colorSecondary);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
   .navItem .resume {
     width: auto;
+    padding: 5px 15px;
+    color: var(--colorSecondary);
+    border: none;
   }
+  .navItem {
+    padding: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--colorSecondary);
+    transition: all 1000ms;
+  }
+
+  .navItem:hover {
+    transform: scale(1.1);
+    outline: 2px solid var(--colorSecondary);
+    box-shadow: 4px 5px 17px -4px var(--colorThird);
+  }
+  .navItem,
   .navItem .resume:hover {
-    background-color: var(--colorSecondary);
     color: var(--colorPrimary);
   }
-}
 
+  .navItem::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--colorSecondary);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+
+  .navItem:hover::before {
+    width: 250%;
+  }
+  /* .navItem .resume:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorPrimary);
+  } */
+}
 
 /* .navItem .border{
   width: 100px;
