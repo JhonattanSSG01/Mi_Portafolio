@@ -1,7 +1,7 @@
 import "./styles.css";
 import React from "react";
-import LogoBanner from "../assets/LogoBanner.png";
-import Background from "../assets/banner.jpg";
+import LogoBanner from "../pages/assets/LogoBanner.png";
+import Background from "../pages/assets/banner.jpg";
 import { NavHeader } from "./Header";
 import About from "../components/AboutMe/About";
 import { Skills } from "../components/Skills/Skills";
@@ -22,12 +22,12 @@ export const Main = () => {
     <>
       <NavHeader />
       <main>
-        <div className="container p-0">
+        <div className="container p-0" style={{maxWidth: '100%'}}>
           <Card className="containerBanner ju" inverse>
-            <CardImg className="banner" alt="Card image cap" src={Background} />
+            <CardImg className="banner" alt="Imagen de fondo del banner" src={Background} />
             <CardImg
               className="bannerLogo"
-              alt="Card image cap"
+              alt="Logo del banner"
               src={LogoBanner}
             />
             <CardImgOverlay className="containerText pt-5 pb-5 text-center">

@@ -1,7 +1,7 @@
 import "../../pages/styles.css";
 import "./contact.css";
 import React from "react";
-import ContactImg from "../../assets/contact.png";
+import ContactImg from "../../pages/assets/contact.png";
 
 const Contact = () => {
   return (

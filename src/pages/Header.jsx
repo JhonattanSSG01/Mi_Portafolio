@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import About from "../components/AboutMe/About";
 
 // Componente Menu y Header
 export function NavHeader() {
@@ -19,7 +20,7 @@ export function NavHeader() {
   return (
     <>
       <header>
-        <Navbar className="nav" color="faded" light>
+        <Navbar className="nav">
           <NavbarBrand href="/" className="me-auto" style={{width: '150px'}}>
             <div className="logo"></div>
           </NavbarBrand>
@@ -47,5 +48,6 @@ export function NavHeader() {
       </header>
     </>
   );
-}
+};
+
 
