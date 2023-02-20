@@ -2,11 +2,12 @@ import "./styles.css";
 import React from "react";
 import LogoBanner from "../pages/assets/LogoBanner.png";
 import Background from "../pages/assets/banner.jpg";
-import { NavHeader } from "./Header";
+import Header from "./Header";
 import About from "../components/AboutMe/About";
 import { Skills } from "../components/Skills/Skills";
 import Contact from "../components/Contact/Contact";
 import Footer from "./Footer";
+import back from './assets/backgr.jpg'
 import {
   NavLink,
   Card,
@@ -20,16 +21,12 @@ import {
 export const Main = () => {
   return (
     <>
-      <NavHeader />
+    {/* <div className="bac">
+      <img src={back} alt="" /> */}
+      <Header />
       <main>
-        <div className="container p-0" style={{maxWidth: '100%'}}>
+        <div className="container p-0">
           <Card className="containerBanner ju" inverse>
-            <CardImg className="banner" alt="Imagen de fondo del banner" src={Background} />
-            <CardImg
-              className="bannerLogo"
-              alt="Logo del banner"
-              src={LogoBanner}
-            />
             <CardImgOverlay className="containerText pt-5 pb-5 text-center">
               <CardTitle tag="h3" className="titleHi sizeText">
                 Hola Mundo, my name is <span>Jhonattan Saavedra Gómez</span>
@@ -61,6 +58,7 @@ export const Main = () => {
           <Footer />
         </div>
       </main>
+    {/* </div> */}
     </>
   );
 };

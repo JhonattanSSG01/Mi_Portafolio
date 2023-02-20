@@ -1,31 +1,51 @@
 html > body {
   background-color: var(--colorPrimary);
-  overflow-x: hidden;
 }
 
-/* header{
-  position: sticky;
-  top: 0;
-  z-index: 3;
-} */
+header {
+  width: 100%;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.2);
+}
 
-.nav > div{
+header .nav > div {
   padding: 0;
 }
 
 .nav .logo {
-  width: 80%;
-  height: 100px;
-  background-image: url(../pages/assets/LogoHeader.png);
+  width: 60%;
+  height: 65px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: all 1s;
+  animation: change 5s infinite;
+  cursor: pointer;
 }
 
-.nav .logo:hover {
-  background-image: url(../pages/assets/hoverLogo.png);
-  transition: all 1s;
+@keyframes change {
+  0% {
+    background-image: url(../pages/assets/hoverLogo.png);
+    transform: scale(0.9);
+  }
+
+  25% {
+    background-image: url(../pages/assets/LogoHeader.png);
+    transform: scale(1);
+  }
+
+  50% {
+    background-image: url(../pages/assets/hoverLogo.png);
+    transform: scale(1.1);
+  }
+
+  75% {
+    background-image: url(../pages/assets/LogoHeader.png);
+    transform: scale(1);
+  }
+
+  100% {
+    background-image: url(../pages/assets/hoverLogo.png);
+    transform: scale(0.9);
+  }
 }
 
 .nav .iconNav {
@@ -34,28 +54,28 @@ html > body {
   font-size: 28px;
 }
 
+.nav .iconNav:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 .nav .navCollapse {
   background-color: var(--colorFour);
   text-align: center;
 }
 
-.navItemGlobal .border {
+.navItemGlobal .link {
   border: none !important;
-  font-size: clamp(20px, 5vw, 30px);
+  font-size: clamp(20px, 4vw, 28px);
   color: var(--colorSecondary);
 }
 
-.navItem .resume {
-  width: 40%;
-  margin: auto;
-  color: var(--colorSecondary);
-  border: 2px solid var(--colorSecondary);
-  border-radius: 5px;
-  font-size: clamp(20px, 5vw, 30px);
+.navItem {
+  display: none;
 }
 
 /* Banner */
-
 .banner {
   width: 100%;
   height: 730px;
@@ -109,37 +129,48 @@ html > body {
 }
 
 @media only screen and (min-width: 600px) {
-  .nav .logo {
-    width: 100%;
-  }
   .nav .iconNav {
     display: none;
   }
+
   header .nav {
-    height: 130px;
-    padding: 20px 40px;
+    width: auto;
+    height: auto;
     flex-wrap: nowrap;
   }
-  .nav img {
-    width: 70%;
+
+  .nav .logo {
+    width: 90%;
+    height: 80px;
   }
+
   .nav .navCollapse {
     background-color: transparent;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
+
   .nav .collapses:not(.show) {
     display: block;
   }
+
   .navItemGlobal,
-  .navItem {
+  .navItem,
+  .navItemGlobal .link {
     margin: 0 10px;
   }
-  .navItemGlobal .border {
-    margin: 0 25px;
+
+  .navItem .resume {
+    width: 40%;
+    margin: auto;
+    color: var(--colorSecondary);
+    border: 2px solid var(--colorSecondary);
+    border-radius: 5px;
+    font-size: clamp(20px, 4vw, 25px);
   }
-  .border {
+
+  .link {
     position: relative;
     border: none;
     background: none;
@@ -149,19 +180,19 @@ html > body {
     cursor: pointer;
   }
 
-  .navItemGlobal .border:hover {
+  .navItemGlobal .link:hover {
     color: var(--colorSecondary);
     transform: scale(0.9);
     transition: all 300ms;
   }
 
-  .border:focus:after,
-  .border:hover:after {
+  .link:focus:after,
+  .link:hover:after {
     width: 100%;
     left: 0%;
   }
 
-  .border:after {
+  .link:after {
     content: "";
     pointer-events: none;
     bottom: -2px;
@@ -174,49 +205,47 @@ html > body {
     transition-duration: 400ms;
     transition-property: width, left;
   }
-  .navItem {
-    cursor: pointer;
-  }
-  .navItem .resume {
+
+  .navItem > .resume {
     width: auto;
-    padding: 5px 15px;
-    color: var(--colorSecondary);
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: var(--colorSecondary);
+    box-shadow: 0 0 5px #363636, inset 0 0 5px #363636;
+    cursor: pointer;
+    color: var(--colorPrimary);
     border: none;
   }
-  .navItem {
-    padding: 0;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    outline: 2px solid var(--colorSecondary);
-    transition: all 1000ms;
+
+  .navItem > .resume:hover, .navItem > .resume:active {
+    background: transparent;
+    color: var(--colorSecondary);
+    animation: movee 0.5s 1 linear;
   }
 
-  .navItem:hover {
-    transform: scale(1.1);
-    outline: 2px solid var(--colorSecondary);
-    box-shadow: 4px 5px 17px -4px var(--colorThird);
-  }
-  .navItem,
-  .navItem .resume:hover {
-    color: var(--colorPrimary);
-  }
+  @keyframes movee {
+    0% {
+      transform: scale(0.7, 1.3);
+    }
 
-  .navItem::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--colorSecondary);
-    transform: skewX(45deg);
-    z-index: -1;
-    transition: width 1000ms;
-  }
+    25% {
+      transform: scale(1.3, 0.7);
+    }
 
-  .navItem:hover::before {
-    width: 250%;
+    50% {
+      transform: scale(0.7, 1.3);
+    }
+
+    75% {
+      transform: scale(1.3, 0.7);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
   }
 
   /* Banner */
@@ -319,4 +348,25 @@ html > body {
   justify-content: space-around;
   align-items: center;
   color: var(--colorDark);
+}
+
+@media only screen and (min-width: 1025px) {
+  header .nav{
+    width: 80%;
+    margin: auto;
+    height: 110px;
+  }
+  
+  .nav .logo {
+    width: 95%;
+    height: 100px;
+  }
+
+  .navItem{
+    display: block;
+  }
+
+  .navItemGlobal .link {
+    margin: 0 20px;
+  }
 }

@@ -9,10 +9,10 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import About from "../components/AboutMe/About";
+// import About from "../components/AboutMe/About";
 
 // Componente Menu y Header
-export function NavHeader() {
+export default function Header() {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -20,27 +20,27 @@ export function NavHeader() {
   return (
     <>
       <header>
-        <Navbar className="nav">
-          <NavbarBrand href="/" className="me-auto" style={{width: '150px'}}>
+        <Navbar className="nav" id="nav">
+          <NavbarBrand href="/" className="me-auto" style={{ width: "150px" }}>
             <div className="logo"></div>
           </NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="iconNav" />
           <Collapse className="collapses" isOpen={!collapsed} navbar>
             <Nav className="navCollapse" navbar>
               <NavItem className="navItemGlobal">
-                <NavLink className="border">About</NavLink>
+                <NavLink className="link">About</NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="border">Skills</NavLink>
+                <NavLink className="link">Skills</NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="border">Projects</NavLink>
+                <NavLink className="link">Projects</NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="border">Contact</NavLink>
+                <NavLink className="link">Contact</NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink className="resume">Resume</NavLink>
+                <NavLink className="resume" href="C:\Users\USUARIO\OneDrive\Documentos\HojasDeVida" target='_blank'>Resume</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -48,6 +48,4 @@ export function NavHeader() {
       </header>
     </>
   );
-};
-
-
+}
