@@ -40,7 +40,7 @@ export default function Header() {
                 <NavLink className="link">Contact</NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink className="resume" href="C:\Users\USUARIO\OneDrive\Documentos\HojasDeVida" target='_blank'>Resume</NavLink>
+                <NavLink className="resume" href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing" target='_blank'>Resume</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

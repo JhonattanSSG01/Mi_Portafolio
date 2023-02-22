@@ -1,11 +1,20 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'remixicon/fonts/remixicon.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const Root = createRoot(document.getElementById('root'));
-
-Root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    loader: rootLoader,
+    children: [
+      {
+        path: "team",
+        element: <Team />,
+        loader: teamLoader,
+      },
+    ],
+  },
+]);
