@@ -130,7 +130,7 @@ header .nav > div {
   background-size: cover;
   background-position: bottom;
   width: auto;
-  height: auto;
+  height: 680px;
 }
 .co {
   background: linear-gradient(
@@ -180,7 +180,7 @@ header .nav > div {
 }
 .svg {
   width: auto;
-  height: auto;
+  height: calc(100vh - 250px);;
 }
 .containerText .cv{
   width: 30%;
@@ -432,6 +432,7 @@ header .nav > div {
   .svg {
     background-position: left;
     width: 100%;
+    height: calc(100vh - 250px);
   }
   .co {
     background: linear-gradient(

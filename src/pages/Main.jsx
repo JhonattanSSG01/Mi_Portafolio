@@ -63,10 +63,10 @@ export const Main = () => {
                 </CardBody>
               </Card>
 
-              {/* <hr className="lineBlue line" />
-          <hr className="lineLigthBlue line" /> */}
+              <hr className="lineBlue line" />
+            <hr className="lineLigthBlue line" />
+            <About />
               {/* 
-          <About />
           <Skills />
           <Contact /> */}
 

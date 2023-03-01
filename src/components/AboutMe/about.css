@@ -1,34 +1,44 @@
-
 .descPerfil > .aboutDesc {
-  font-size: clamp(24px, 5vw, 35px);
+  font-size: clamp(24px, 4vw, 30px);
   text-align: justify;
-  color: var(--colorThird);
+  color: var(--colorSecondary);
   letter-spacing: 3px;
   font-family: var(--fontSecondary);
 }
 
-.conttt > .contPerfil > .perfil{
-  width: 100%;
+.conttt > .contPerfil > .perfil {
+  width: 70%;
   opacity: 50%;
 }
+
+.conttt > .contPerfil {
+    text-align: center;
+  }
 
 .conttt {
   display: flex;
   flex-direction: column;
 }
 
-@media only screen and (min-width: 600px){
-  .conttt > .contPerfil{
-  width: 70%;
-  margin-left: auto;
+@media only screen and (min-width: 600px) {
+  .conttt > .contPerfil > .perfil {
+    width: 200px;
 }
-.conttt {
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
+  .conttt > .contPerfil {
+    width: 100%;
+  }
+  .conttt {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .descPerfil > .aboutDesc {
+    width: 90%;
+    margin: auto;
+  }
 }
-.descPerfil > .aboutDesc {
-  width: 90%;
-  margin: auto;
+@media only screen and (min-width: 1024px) {
+  .conttt > .contPerfil > .perfil {
+    width: 400px;
 }
 }
