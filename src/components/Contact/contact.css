@@ -28,3 +28,21 @@
   font-size: 35px;
   color: var(--colorFour);
 }
+
+.contact img{
+    width: 100%;
+    opacity: .5;
+  }
+@media only screen and (min-width: 600px){
+
+  .contact img{
+    width: 30%;
+    
+  }
+
+  .buttonContact {
+  width: 60%;
+  padding: 8px 15px;
+}
+  
+}

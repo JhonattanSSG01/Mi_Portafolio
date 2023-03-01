@@ -1,9 +1,9 @@
 // import "./styles.css";
 import React from "react";
 import Header from "./Header";
-import Me from "./assets/me.png"
+import Me from "./assets/me.png";
 import About from "../components/AboutMe/About";
-import Projects from '../components/Projects/Projects'
+import Projects from "../components/Projects/Projects";
 import { Skills } from "../components/Skills/Skills";
 import Contact from "../components/Contact/Contact";
 import Footer from "./Footer";
@@ -34,10 +34,11 @@ export const Main = () => {
           <div className="svg">
             <div className="container p-0">
               <Card className="containerBanner ju">
-                  <img alt="Sample" src={Me} />
+                <img alt="Sample" src={Me} />
                 <CardBody className="containerText text-center">
                   <CardTitle tag="h5" className="titleHi sizeText pt-3 pb-3">
-                    Hola Mundo, mi nombre es <span className="text-muted">Jhonattan Saavedra Gómez</span>
+                    Hola Mundo, mi nombre es{" "}
+                    <span className="text-muted">Jhonattan Saavedra Gómez</span>
                   </CardTitle>
                   <CardSubtitle className="titleMuted mb-4" tag="h6">
                     <small>
@@ -64,17 +65,16 @@ export const Main = () => {
 
               <hr className="lineBlue line" />
               <hr className="lineLigthBlue line" />
-            <About />
-            <Skills />
-            <Projects />
-              {/* 
-          <Contact /> */}
+              <About />
+              <Skills />
+              <Projects />
+              <Contact />
 
-              {/* <hr className="lineLigthBlue line" />
-          <hr className="lineLigthBlue line" />
-          <hr className="lineLigthBlueC line" /> */}
+              <hr className="lineLigthBlue line" />
+              <hr className="lineLigthBlue line" />
+              <hr className="lineLigthBlueC line" />
 
-              {/* <Footer /> */}
+              <Footer />
             </div>
           </div>
         </div>
