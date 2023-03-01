@@ -1,10 +1,9 @@
 // import "./styles.css";
 import React from "react";
-import LogoBanner from "../pages/assets/LogoBanner.png";
-import Background from "../pages/assets/banner.jpg";
 import Header from "./Header";
 import Me from "./assets/me.png"
 import About from "../components/AboutMe/About";
+import Projects from '../components/Projects/Projects'
 import { Skills } from "../components/Skills/Skills";
 import Contact from "../components/Contact/Contact";
 import Footer from "./Footer";
@@ -67,6 +66,7 @@ export const Main = () => {
               <hr className="lineLigthBlue line" />
             <About />
             <Skills />
+            <Projects />
               {/* 
           <Contact /> */}
 
