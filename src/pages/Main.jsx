@@ -64,10 +64,10 @@ export const Main = () => {
               </Card>
 
               <hr className="lineBlue line" />
-            <hr className="lineLigthBlue line" />
+              <hr className="lineLigthBlue line" />
             <About />
+            <Skills />
               {/* 
-          <Skills />
           <Contact /> */}
 
               {/* <hr className="lineLigthBlue line" />

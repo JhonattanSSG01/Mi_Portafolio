@@ -1,5 +1,5 @@
 import "../Skills/skills.css";
-import "../../pages/styles.css"
+import "../../pages/styles.css";
 import React, { useState } from "react";
 
 import {
@@ -10,6 +10,7 @@ import {
   TabPane,
   Row,
   Col,
+  Progress,
 } from "reactstrap";
 
 export function Skills() {
@@ -60,19 +61,31 @@ export function Skills() {
                 <h4>Tab 1 Contents</h4>
                 <div className="skillsToggle">
                   <section>
-                    <i className="ri-html5-fill">
-                      <span></span>
-                    </i>
+                    <i className="ri-html5-fill"></i>
+                    <Progress
+                      animated
+                      className="my-3 progress"
+                      color="warning"
+                      value="90"
+                    />
                   </section>
                   <section>
-                    <i className="ri-css3-fill">
-                      <span></span>
-                    </i>
+                    <i className="ri-css3-fill"></i>
+                    <Progress
+                      animated
+                      className="my-3 progress"
+                      color="info"
+                      value="80"
+                    />
                   </section>
                   <section>
-                    <i className="ri-github-fill">
-                      <span></span>
-                    </i>
+                    <i className="ri-github-fill"></i>
+                    <Progress
+                      animated
+                      className="my-3 progress"
+                      color="dark"
+                      value="60"
+                    />
                   </section>
                 </div>
               </Col>
@@ -84,14 +97,17 @@ export function Skills() {
                 <h4>Tab 2 Contents</h4>
                 <div className="skillsToggle">
                   <section>
-                    <i className="ri-reactjs-line">
-                      <span></span>
-                    </i>
+                    <i className="ri-reactjs-line"></i>
+                    <Progress animated className="my-3 progress" value="30" />
                   </section>
                   <section>
-                    <i className="ri-trello-fill">
-                      <span></span>
-                    </i>
+                    <i className="ri-trello-fill"></i>
+                    <Progress
+                      animated
+                      className="my-3 progress"
+                      color="info"
+                      value="70"
+                    />
                   </section>
                 </div>
               </Col>
@@ -100,17 +116,25 @@ export function Skills() {
           <TabPane tabId="3">
             <Row>
               <Col sm="12">
-                <h4>Tab 2 Contents</h4>
+                <h4>Tab 3 Contents</h4>
                 <div className="skillsToggle">
                   <section>
-                    <i className="ri-gitlab-fill">
-                      <span></span>
-                    </i>
+                    <i className="ri-gitlab-fill"></i>
+                    <Progress
+                      animated
+                      className="my-3 progress"
+                      color="danger"
+                      value="20"
+                    />
                   </section>
                   <section>
-                    <i className="ri-git-pull-request-fill">
-                      <span></span>
-                    </i>
+                    <i className="ri-git-pull-request-fill"></i>
+                    <Progress
+                      animated
+                      className="my-3 progress"
+                      color="success"
+                      value="50"
+                    />
                   </section>
                 </div>
               </Col>

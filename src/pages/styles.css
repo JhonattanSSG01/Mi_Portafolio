@@ -432,7 +432,7 @@ header .nav > div {
   .svg {
     background-position: left;
     width: 100%;
-    height: calc(100vh - 250px);
+    height: 450px;
   }
   .co {
     background: linear-gradient(
