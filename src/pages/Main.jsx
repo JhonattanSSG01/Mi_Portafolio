@@ -35,29 +35,31 @@ export const Main = () => {
           <div className="svg">
             <div className="container p-0">
               <Card className="containerBanner ju">
-                <img alt="Sample" src={Me} />
-                <CardBody className="containerText pt-5 pb-5 text-center">
-                  <CardTitle tag="h5" className="titleHi sizeText">
-                    Hola Mundo, my name is <span>Jhonattan Saavedra Gómez</span>
+                  <img alt="Sample" src={Me} />
+                <CardBody className="containerText text-center">
+                  <CardTitle tag="h5" className="titleHi sizeText pt-3 pb-3">
+                    Hola Mundo, mi nombre es <span className="text-muted">Jhonattan Saavedra Gómez</span>
                   </CardTitle>
                   <CardSubtitle className="titleMuted mb-4" tag="h6">
-                    <small>I turn people's ideas into web creativity.</small>
+                    <small>
+                      Convierto las ideas de las personas en creatividad web.
+                    </small>
                   </CardSubtitle>
                   <CardText className="description sizeText">
-                    I'm a growing FullStack Web Developer focused on front-end
-                    but with basic knowledge in Back-end. I’m passionate about
-                    technology and enjoy being able to build things based on
-                    imaginative ideas through creativity.
+                    Soy un desarrollador web FullStack en crecimiento centrado
+                    en el front-end pero con conocimientos básicos en Back-end.
+                    me apasiona tecnología y disfrutar de poder construir cosas
+                    basadas en ideas imaginativas a través de la creatividad.
                   </CardText>
-                <Button>
-                  <NavLink
-                    
-                    href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
-                    target="_blank"
-                  >
-                    See More
-                  </NavLink>
-                </Button>
+                  <Button className="cv">
+                    <NavLink
+                      className=""
+                      href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
+                      target="_blank"
+                    >
+                      See More
+                    </NavLink>
+                  </Button>
                 </CardBody>
               </Card>
 

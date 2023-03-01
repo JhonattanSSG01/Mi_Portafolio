@@ -108,7 +108,89 @@ header .nav > div {
   color: var(--colorFour);
 }
 
+.texto {
+  display: none;
+}
+
+.container .containerBanner {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.containerBanner img {
+  width: 100%;
+  height: 150px;
+  margin: 10px auto;
+  padding: 5px;
+  object-fit: cover;
+}
+.svg {
+  background-image: url("./assets/waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: auto;
+  height: auto;
+}
+.co {
+  background: linear-gradient(
+    90deg,
+    var(--colorPrimary),
+    var(--colorFour),
+    var(--colorSecondary)
+  );
+  background-size: 400% 400%;
+  animation: animateBackground 8s infinite ease-in-out;
+}
+
+.containerText .cv{
+  background-color: var(--colorSecondary);
+  color: var(--colorPrimary);
+  animation: cv 5s infinite linear;
+}
+
+@keyframes cv {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.9);
+  }
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0 80%;
+  }
+  50% {
+    background-position: 80% 50%;
+  }
+  100% {
+    background-position: 0 80%;
+  }
+}
+
+
 @media only screen and (min-width: 600px) {
+  .containerBanner img {
+  width: 80%;
+  height: 150px;
+}
+.svg {
+  width: auto;
+  height: auto;
+}
+.containerText .cv{
+  width: 30%;
+  font-size: larger;
+  margin: 10px;
+  padding: 8px;
+  background-color: var(--colorSecondary);
+  color: var(--colorPrimary);
+  animation: cv 5s infinite linear;
+}
   .nav .iconNav {
     display: none;
   }
@@ -319,11 +401,13 @@ header .nav > div {
     color: var(--colorSecondary);
   }
   .texto {
+    display: block;
     width: 100%;
+    padding: 0 15px;
     color: transparent;
     text-align: center;
     text-transform: uppercase;
-    font-size: 250px;
+    font-size: 230px;
     font-weight: 600;
     background-image: url("./assets/geran-de-klerk-AX9sJ-mPoL4-unsplash.jpg");
     background-size: cover;
@@ -337,24 +421,17 @@ header .nav > div {
     letter-spacing: 15px;
   }
 
-  .container .containerBanner{
+  .container .containerBanner {
     flex-direction: row-reverse;
-    background-color: transparent;
-    border: none;
-    outline: none;
   }
-  .containerBanner img{
-    width: 20%;
+  .containerBanner img {
+    align-self: center;
+    width: 30%;
     height: 300px;
-    margin: auto;
-    object-fit: cover;
   }
   .svg {
-    background-image: url("./assets/waves.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: left;
     width: 100%;
-    height: calc(100vh - 420px);
   }
   .co {
     background: linear-gradient(
