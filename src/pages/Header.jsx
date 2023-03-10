@@ -27,16 +27,16 @@ export default function Header() {
           <Collapse className="collapses" isOpen={!collapsed} navbar>
             <Nav className="navCollapse" navbar>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">About</NavLink>
+                <NavLink className="link">Sobre mí</NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Skills</NavLink>
+                <NavLink className="link">Habilidades</NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Projects</NavLink>
+                <NavLink className="link">Proyectos</NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Contact</NavLink>
+                <NavLink className="link">Contacto</NavLink>
               </NavItem>
               <NavItem className="navItem">
                 <NavLink
@@ -44,7 +44,7 @@ export default function Header() {
                   href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
                   target="_blank"
                 >
-                  Resume
+                  Hoka de Vida
                 </NavLink>
               </NavItem>
             </Nav>

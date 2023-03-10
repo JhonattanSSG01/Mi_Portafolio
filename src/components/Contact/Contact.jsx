@@ -8,9 +8,9 @@ const Contact = () => {
     <>
       <div className="contact">
         <h1 className="titlePrincipal pt-3 pb-3" data-aos="fade-right">
-          Contact <span className="sideLeft lineTrough"></span>
+          Contacto <span className="sideLeft lineTrough"></span>
         </h1>
-        <div>
+        <div className="containerContact">
           <img
             className="mt-3 mb-3"
             src={ContactImg}

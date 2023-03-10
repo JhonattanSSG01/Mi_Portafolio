@@ -80,7 +80,7 @@ header .nav > div {
 /* Banner */
 
 .containerMain {
-  max-width: 80%;
+  max-width: 95%;
   margin: auto;
 }
 
@@ -431,6 +431,10 @@ header .nav > div {
     align-items: center;
   }
 
+  .containerMain {
+    max-width: 90%;
+  }
+
   .containerBanner .containerText {
     color: var(--colorSecondary);
     padding: 0 10px;
@@ -505,6 +509,9 @@ header .nav > div {
 }
 
 @media only screen and (min-width: 1280px) {
+  .containerMain {
+    max-width: 80%;
+  }
   .containerBanner .containerText {
     padding: 0 80px;
   }

@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div className="aboutMe">
         <h1 className="titlePrincipal" data-aos="fade-right">
-          About Me <span className="sideRight lineTrough"></span>
+          Sobe Mí <span className="sideRight lineTrough"></span>
         </h1>
         <div className="conttt">
           <section className="contPerfil">
@@ -19,11 +19,11 @@ const About = () => {
           </section>
           <section className="descPerfil">
             <p className="aboutDesc p-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries
+              Me considero una persona resiliente y proactiva con excelente
+              actitud frente a los desafíos, actualmente soy desarrollador web
+              full stack con manejo adecuado en lenguajes de programación HTML5,
+              CSS3 y JS junto con librerías como React para la construcción de
+              aplicaciones web intuitivas mediante la metodología ágil - SRUM.
             </p>
           </section>
         </div>

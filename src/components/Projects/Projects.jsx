@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <h1 className="titlePrincipal pt-5 pb-5" data-aos="fade-right">
-        Projects <span className="sideRight lineTrough"></span>
+        Proyectos <span className="sideRight lineTrough"></span>
       </h1>
       <div className="containerr">
         {Data.map((projects) => {
