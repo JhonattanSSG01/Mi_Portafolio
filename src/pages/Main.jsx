@@ -7,12 +7,10 @@ import Projects from "../components/Projects/Projects";
 import { Skills } from "../components/Skills/Skills";
 import Contact from "../components/Contact/Contact";
 import Footer from "./Footer";
-import back from "./assets/backgr.jpg";
 import {
   NavLink,
   Card,
   CardBody,
-  CardImgOverlay,
   CardTitle,
   CardText,
   CardSubtitle,
@@ -23,60 +21,70 @@ import {
 export const Main = () => {
   return (
     <>
-      {/* <div className="bac">
-      <img src={back} alt="" /> */}
       <main>
         <div className="co">
           <Header />
           <div className="hero">
-            <h1 className="texto">full stack</h1>
+            <h1 className="texto">
+              full stack
+            </h1>
           </div>
           <div className="svg">
             <div className="container p-0">
-              <Card className="containerBanner ju">
-                <img alt="Sample" src={Me} />
+              <Card className="containerBanner">
+                <img
+                  className="animate__animated animate__zoomInRight"
+                  alt="Sample"
+                  src={Me}
+                />
                 <CardBody className="containerText text-center">
                   <CardTitle tag="h5" className="titleHi sizeText pt-3 pb-3">
-                    Hola Mundo, mi nombre es{" "}
-                    <span className="text-muted">Jhonattan Saavedra Gómez</span>
+                    Hola Mundo, mi nombre es
+                    <span className="text-muted animate__animated animate__flash">
+                      <em> Jhonattan Stiven Saavedra Gómez </em>
+                    </span>
                   </CardTitle>
                   <CardSubtitle className="titleMuted mb-4" tag="h6">
                     <small>
-                      Convierto las ideas de las personas en creatividad web.
+                      <b>** Convierto ideas en creatividad web **</b>
                     </small>
                   </CardSubtitle>
                   <CardText className="description sizeText">
                     Soy un desarrollador web FullStack en crecimiento centrado
-                    en el front-end pero con conocimientos básicos en Back-end.
-                    me apasiona tecnología y disfrutar de poder construir cosas
-                    basadas en ideas imaginativas a través de la creatividad.
+                    en el Front-end pero con conocimientos básicos en Back-end.
+                    Me apasiona la tecnología y disfrutar el poder construir
+                    cosas basadas en ideas imaginativas a través de la
+                    creatividad.
                   </CardText>
                   <Button className="cv">
                     <NavLink
-                      className=""
+                      className="link animate__animated animate__wobble"
                       href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
                       target="_blank"
                     >
-                      See More
+                      Ver más
                     </NavLink>
                   </Button>
                 </CardBody>
               </Card>
-
-              <hr className="lineBlue line" />
-              <hr className="lineLigthBlue line" />
-              <About />
-              <Skills />
-              <Projects />
-              <Contact />
-
-              <hr className="lineLigthBlue line" />
-              <hr className="lineLigthBlue line" />
-              <hr className="lineLigthBlueC line" />
-
-              <Footer />
             </div>
           </div>
+        </div>
+
+        <div className="containerMain">
+          <hr className="lineBlue line" />
+          <hr className="lineLigthBlue line" />
+
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+
+          <hr className="lineLigthBlue line" />
+          <hr className="lineLigthBlue line" />
+          <hr className="lineLigthBlueC line" />
+
+          <Footer />
         </div>
       </main>
       {/* </div> */}

@@ -9,7 +9,6 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-// import About from "../components/AboutMe/About";
 
 // Componente Menu y Header
 export default function Header() {
@@ -21,7 +20,7 @@ export default function Header() {
     <>
       <header>
         <Navbar className="nav" id="nav">
-          <NavbarBrand href="/" className="me-auto" style={{ width: "150px" }}>
+          <NavbarBrand href="/" className="me-auto animate__animated animate__flash" style={{ width: "150px" }}>
             <div className="logo"></div>
           </NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="iconNav" />
@@ -40,7 +39,13 @@ export default function Header() {
                 <NavLink className="link">Contact</NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink className="resume" href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing" target='_blank'>Resume</NavLink>
+                <NavLink
+                  className="resume animate__animated animate__wobble"
+                  href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
+                  target="_blank"
+                >
+                  Resume
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

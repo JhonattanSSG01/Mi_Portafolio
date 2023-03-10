@@ -25,7 +25,7 @@ export function Skills() {
   return (
     <>
       <div className="skills">
-        <h1 className="titlePrincipal pt-3 pb-3">
+        <h1 className="titlePrincipal pt-3 pb-3" data-aos="fade-right">
           Skills <span className="sideLeft lineTrough"></span>
         </h1>
         <Nav tabs>

@@ -79,20 +79,25 @@ header .nav > div {
 
 /* Banner */
 
+.containerMain {
+  max-width: 80%;
+  margin: auto;
+}
+
 .containerText {
   font-family: var(--fontPrincipal);
 }
 
 .sizeText {
-  font-size: clamp(18px, 5vw, 35px);
+  font-size: clamp(18px, 5vw, 30px);
 }
 
 .titleMuted {
-  font-size: clamp(22px, 5vw, 30px);
+  font-size: clamp(22px, 5vw, 28px);
 }
 
 .titleHi > span {
-  font-size: clamp(22px, 5vw, 35px);
+  font-size: clamp(22px, 5vw, 30px);
 }
 
 .description {
@@ -118,20 +123,18 @@ header .nav > div {
   outline: none;
 }
 .containerBanner img {
-  width: 100%;
-  height: 150px;
-  margin: 10px auto;
-  padding: 5px;
-  object-fit: cover;
+  display: none;
 }
+
 .svg {
   background-image: url("./assets/waves.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   width: auto;
-  height: 680px;
+  height: 550px;
 }
+
 .co {
   background: linear-gradient(
     90deg,
@@ -144,9 +147,17 @@ header .nav > div {
 }
 
 .containerText .cv {
+  width: 35%;
   background-color: var(--colorSecondary);
   color: var(--colorPrimary);
   animation: cv 5s infinite linear;
+  border: 0;
+  outline: 0;
+}
+
+.containerText .cv:hover {
+  background-color: var(--colorPrimary);
+  color: var(--colorSecondary);
 }
 
 @keyframes cv {
@@ -172,14 +183,36 @@ header .nav > div {
   }
 }
 
-@media only screen and (min-width: 600px) {
+.animate__animated.animate__zoomInRight {
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+}
+@media only screen and (min-width: 500px) {
+  .containerBanner img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 10px auto;
+    padding: 5px;
+    object-fit: cover;
+  }
+  .svg {
+    width: auto;
+    height: calc(100vh - 320px);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .containerBanner .containerText {
+    padding: 0 50px;
+  }
+
   .containerBanner img {
     width: 80%;
     height: 150px;
   }
   .svg {
     width: auto;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 120px);
   }
   .containerText .cv {
     width: 30%;
@@ -397,9 +430,12 @@ header .nav > div {
     display: flex;
     align-items: center;
   }
+
   .containerBanner .containerText {
     color: var(--colorSecondary);
+    padding: 0 10px;
   }
+
   .texto {
     display: block;
     width: 100%;
@@ -407,33 +443,35 @@ header .nav > div {
     color: transparent;
     text-align: center;
     text-transform: uppercase;
-    font-size: 230px;
-    font-weight: 600;
+    font-size: 200px;
+    font-weight: 700;
     background-image: url("./assets/geran-de-klerk-AX9sJ-mPoL4-unsplash.jpg");
     background-size: cover;
-    background-position-y: center;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     font-family: "Anton", sans-serif;
-    letter-spacing: 15px;
+    letter-spacing: 20px;
   }
 
   .container .containerBanner {
     flex-direction: row-reverse;
   }
+
   .containerBanner img {
     align-self: center;
-    width: 30%;
-    height: 300px;
+    height: 250px;
   }
+
   .svg {
     background-position: left;
     width: 100%;
-    height: 450px;
+    height: 460px;
   }
+
   .co {
     background: linear-gradient(
       145deg,
@@ -447,13 +485,13 @@ header .nav > div {
 
   @keyframes animateBackground {
     0% {
-      background-position: 0 50%;
+      background-position: 0 80%;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 80% 50%;
     }
     100% {
-      background-position: 0 50%;
+      background-position: 0 80%;
     }
   }
 
@@ -463,5 +501,21 @@ header .nav > div {
 
   .navItemGlobal .link {
     margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .containerBanner .containerText {
+    padding: 0 80px;
+  }
+  .containerBanner img {
+    height: 400px;
+  }
+  .texto {
+    font-size: 300px;
+    background-position-y: center;
+  }
+  .svg {
+    height: calc(100vh - 480px);
   }
 }
