@@ -12,7 +12,7 @@ const Projects = () => {
         {Data.map((projects) => {
           return (
             <>
-              <div class="card">
+              <div class="card" data-aos="flip-down">
                 <img src={projects.url} alt="" />
                 <div class="textBox">
                   <p class="text head">{projects.title}</p>

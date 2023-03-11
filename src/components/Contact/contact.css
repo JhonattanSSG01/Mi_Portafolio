@@ -8,11 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: space-around;
 }
 
-.contact > .contactDesc {
-  font-size: 24px;
+.contact .contactDesc {
+  font-size: 30px;
   text-align: justify;
   color: var(--colorThird);
   letter-spacing: 3px;
@@ -25,15 +25,54 @@
   color: var(--colorSecondary);
 }
 
-.buttonContact {
-  width: 80%;
-  margin: auto;
-  padding: 8px 15px;
+.containerContact .buttonContact{
+  margin: 0 15px;
+  padding: 8px 10px;
   border-radius: 5px;
   text-align: center;
   background-color: var(--colorThird);
-  font-size: 35px;
+  font-size: 20px;
   color: var(--colorFour);
+  transition: all 1s;
+}
+
+.buttonContact span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: auto;
+  height: 2.5em;
+  background-color: var(--colorThird);
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: var(--colorFour);
+  border: 0.08em solid var(--colorFour);
+  box-shadow: 0 0.4em 0.1em 0.019em var(--colorFour);
+}
+
+.buttonContact span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 var(--colorFour);
+  background-color: var(--colorSecondary);
+}
+
+.buttonContact span:not(hover) {
+  transition: all 1s;
+}
+
+
+.legendContact{
+  width: 100%;
+  padding: 10px;
+}
+
+.containerContact button:hover{
+  background-color: var(--colorSecondary);
+  color: var(--colorPrimary);
+  transform: scale(.9);
 }
 
 .contact img{
@@ -51,8 +90,8 @@
   flex-direction: row;
 }
 
-  .buttonContact {
-  width: 60%;
+  .containerContact button {
+  width: 40%;
   padding: 8px 15px;
 }
   
