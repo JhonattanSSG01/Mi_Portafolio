@@ -19,10 +19,10 @@ const Projects = () => {
                   <span>{projects.description}</span>
                   <p class="text price">{projects.category}</p>
                   <section className="links">
-                    <a href="">
+                    <a href={projects.gitHub} target="_blank">
                       <i className="ri-github-fill"></i>
                     </a>
-                    <a href="">
+                    <a href={projects.deploy} target="_blank">
                       <i className="ri-window-fill"></i>
                     </a>
                   </section>

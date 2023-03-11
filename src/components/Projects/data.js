@@ -14,56 +14,72 @@ export const Data = [
     category: 'Personal',
     url: Calculadora,
     title: 'Calculadora',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Personal desarrollado con Html5, Css3 y Js',
+    gitHub: 'https://github.com/JhonattanSSG01/calculadora.git',
+    deploy: 'https://jhonattanssg01.github.io/calculadora/'
   },
   {
     id: '02',
     category: 'Colaborators',
     url: Deezer,
     title: 'Clon Deezer',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Comaborativo desarrollado con Html5 y Css3',
+    gitHub: 'https://github.com/JhonattanSSG01/Deezer.git',
+    deploy: 'https://jhonattanssg01.github.io/Deezer/'
   },
   {
     id: '03',
     category: 'Personal',
     url: Pandebono,
     title: 'Pandebono',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Personal desarrollado con Html5, Css3, Js y React',
+    gitHub: 'https://github.com/JhonattanSSG01/Pandebonos_Express.git',
+    deploy: 'https://pandebono-express.netlify.app'
   },
   {
     id: '04',
     category: 'Personal',
     url: Sabujcha,
     title: 'Sabujcha',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Personal desarrollado con Html5 y Css3',
+    gitHub: 'https://github.com/JhonattanSSG01/Sabujcha.git',
+    deploy: 'https://jhonattanssg01.github.io/Sabujcha/'
   },
   {
     id: '05',
     category: 'Colaborators',
     url: Semillas,
     title: 'Fundación Semillas',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Colaborativo desarrollado con Html5 y Css3',
+    gitHub: 'https://github.com/JhonattanSSG01/Fundaci-nSemillas.git',
+    deploy: 'https://neon-sfogliatella-5dfada.netlify.app'
   },
   {
     id: '06',
     category: 'Colaborators',
     url: Tetris,
     title: 'Tetris',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Colaborativo desarrollado con Html5, Css3 y Js',
+    gitHub: 'https://github.com/JhonattanSSG01/Tetris.git',
+    deploy: 'https://jhonattanssg01.github.io/Tetris/'
   },
   {
     id: '07',
     category: 'Personal',
     url: Todo,
     title: 'To-Do-List',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Personales desarrollado con Html5, Css3, Js y React',
+    gitHub: 'https://github.com/JhonattanSSG01/To-do-list.git',
+    deploy: 'https://to-do-list-jssg.netlify.app'
   },
   {
     id: '08',
     category: 'Personal',
     url: Tributo,
     title: 'Amasijos Tradicionales',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Personales desarrollado con Html5, Css3, Js y React',
+    gitHub: 'https://github.com/JhonattanSSG01/AmasijosTradicionales.git',
+    deploy: 'https://jhonattanssg01.github.io/AmasijosTradicionales/'
   }
   ,
   {
@@ -71,6 +87,8 @@ export const Data = [
     category: 'Colaborators',
     url: Wheel,
     title: 'Wheel Of Zoombie',
-    description: 'Lorem Ipsum'
+    description: 'Proyecto Colaborativo desarrollado con Html5, Css3 y Js',
+    gitHub: 'https://gitlab.com/prueba776/prueba-proyecto.git',
+    deploy: 'https://lambent-axolotl-7d7967.netlify.app'
   }
 ]
