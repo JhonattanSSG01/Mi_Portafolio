@@ -187,6 +187,78 @@ header .nav > div {
   --animate-duration: 2s;
   --animate-delay: 1s;
 }
+
+.line {
+  margin: 25px auto;
+  padding: 3px;
+  border-radius: 50px;
+  opacity: 100%;
+}
+
+.lineBlue {
+  width: 90%;
+  background-color: var(--colorSecondary);
+}
+
+.lineLigthBlue {
+  width: 80%;
+  background-color: var(--colorThird);
+}
+.lineLigthBlueC {
+  width: 70%;
+  background-color: var(--colorThird);
+}
+/* Lineas Generales */
+
+.aboutMe > .titlePrincipal,
+.skills > .titlePrincipal,
+.projects > .titlePrincipal,
+.contact > .titlePrincipal {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 32px;
+  color: var(--colorSecondary);
+  position: relative;
+}
+
+.titlePrincipal > .lineTrough {
+  width: 15%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50px;
+  background: var(--colorSecondary);
+}
+
+.sideRight {
+  right: 25px;
+}
+
+.sideLeft {
+  left: 25px;
+}
+/* End Lineas Generales */
+
+.allRights {
+  padding: 15px;
+  text-align: center;
+}
+
+.allRights > h4 {
+  font-size: 24px;
+}
+
+.socialMedia {
+  padding: 15px;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--colorDark);
+}
+
 @media only screen and (min-width: 500px) {
   .containerBanner img {
     display: block;
@@ -199,6 +271,18 @@ header .nav > div {
   .svg {
     width: auto;
     height: calc(100vh - 320px);
+  }
+
+  .titlePrincipal > .lineTrough {
+    width: 25%;
+  }
+
+  .sideRight {
+    right: 50px;
+  }
+
+  .sideLeft {
+    left: 0;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -342,76 +426,6 @@ header .nav > div {
       transform: scale(1, 1);
     }
   }
-}
-
-.line {
-  margin: 25px auto;
-  padding: 3px;
-  border-radius: 50px;
-  opacity: 100%;
-}
-
-.lineBlue {
-  width: 90%;
-  background-color: var(--colorSecondary);
-}
-
-.lineLigthBlue {
-  width: 80%;
-  background-color: var(--colorThird);
-}
-.lineLigthBlueC {
-  width: 70%;
-  background-color: var(--colorThird);
-}
-/* Lineas Generales */
-
-.aboutMe > .titlePrincipal,
-.skills > .titlePrincipal,
-.projects > .titlePrincipal,
-.contact > .titlePrincipal {
-  text-align: center;
-  font-size: 32px;
-  color: var(--colorSecondary);
-  position: relative;
-}
-
-.titlePrincipal > .lineTrough {
-  width: 25%;
-  height: 3px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border-radius: 50px;
-  background: var(--colorSecondary);
-}
-
-.sideRight {
-  right: 0;
-}
-
-.sideLeft {
-  left: 0;
-}
-/* End Lineas Generales */
-
-.allRights {
-  padding: 15px;
-  text-align: center;
-}
-
-.allRights > h4 {
-  font-size: 24px;
-}
-
-.socialMedia {
-  padding: 15px;
-  font-size: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: var(--colorDark);
 }
 
 @media only screen and (min-width: 1025px) {

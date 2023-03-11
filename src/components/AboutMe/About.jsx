@@ -1,13 +1,13 @@
 import React from "react";
 import "./about.css";
-import AboutMe from "../../pages/assets/aboutMe.png";
+import AboutMe from "../../pages/assets/about.png";
 
 const About = () => {
   return (
     <>
       <div className="aboutMe">
         <h1 className="titlePrincipal" data-aos="fade-right">
-          Sobe Mí <span className="sideRight lineTrough"></span>
+          Sobre Mí <span className="sideRight lineTrough"></span>
         </h1>
         <div className="conttt">
           <section className="contPerfil">
@@ -15,6 +15,8 @@ const About = () => {
               className="perfil mt-3 mb-3"
               src={AboutMe}
               alt="Imagen alusiva a mi"
+              data-aos="fade-up-left"
+              data-aos-duration="2000"
             />
           </section>
           <section className="descPerfil">

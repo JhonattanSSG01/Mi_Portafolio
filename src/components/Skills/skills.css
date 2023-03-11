@@ -33,21 +33,89 @@
   background: var(--colorThird);
 }
 
-.navItem > .navLink{
+.navItem > .navLink {
   font-size: 22px;
   color: var(--colorDark);
 }
 
-.progress{
+.progress {
   width: 100%;
   height: 20px;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (min-width: 600px){
-  .progress{
-  width: 50%;
-  height: 20px;
-  background-color: rgba(0, 0, 0, .2);
-}
+.containerSkills img {
+    width: 25%;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .level1, .level2{
+    text-align: center;
+  }
+
+  .containerSkills .html {
+    animation: zoom 3.5s linear infinite;
+  }
+  .containerSkills .css {
+    animation: zoom 4s linear infinite;
+  }
+  .containerSkills .git {
+    animation: zoom 5s linear infinite;
+  }
+  .containerSkills .js {
+    animation: zoom 6s linear infinite;
+  }
+  .containerSkills .trello {
+    animation: zoom 5.5s linear infinite;
+  }
+  .containerSkills .sql {
+    animation: zoom 4.5s linear infinite;
+  }
+  .containerSkills .scrum {
+    animation: zoom 3.5s linear infinite;
+  }
+  .containerSkills .react {
+    animation: zoom 6.5s linear infinite;
+  }
+  .containerSkills .trello {
+    animation: zoom 7s linear infinite;
+  }
+  .containerSkills .figma {
+    animation: zoom 3.2s linear infinite;
+  }
+  .containerSkills .gitLab {
+    animation: zoom 6.5s linear infinite;
+  }
+  .containerSkills .gitHub {
+    animation: zoom 4.2s linear infinite;
+  }
+  .containerSkills .bootstrap {
+    animation: zoom 5.3s linear infinite;
+  }
+
+  @keyframes zoom {
+    0%{transform: scale(1); filter: blur(2px)}
+    25%{transform: scale(.9); filter: blur(1px)}
+    50%{transform: scale(1.3); filter: blur(0px)}
+    75%{transform: scale(.8); filter: blur(1px)}
+    100%{transform: scale(1.1); filter: blur(2px)}
+  }
+
+@media only screen and (min-width: 600px) {
+  .progress {
+    width: 50%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .containerSkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.containerSkills img {
+    margin: 20px;
+    padding: 10px;
+  }
+
 }

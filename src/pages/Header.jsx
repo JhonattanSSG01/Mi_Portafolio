@@ -44,7 +44,7 @@ export default function Header() {
                   href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
                   target="_blank"
                 >
-                  Hoka de Vida
+                  Hoja de Vida
                 </NavLink>
               </NavItem>
             </Nav>
