@@ -17,7 +17,7 @@ import scrum from "../../pages/assets/scrum.png";
 export function Skills() {
   return (
     <>
-      <div className="skills">
+      <div className="skills" id="skills">
         <h1 className="titlePrincipal pt-3 pb-3" data-aos="fade-right">
           Habilidades <span className="sideLeft lineTrough"></span>
         </h1>

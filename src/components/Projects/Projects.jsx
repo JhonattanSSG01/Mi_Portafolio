@@ -4,8 +4,8 @@ import { Data } from "./data";
 
 const Projects = () => {
   return (
-    <div className="projects">
-      <h1 className="titlePrincipal pt-5 pb-5" data-aos="fade-right">
+    <div className="projects" id="projects">
+      <h1 className="titlePrincipal mt-5 pt-5 pb-5" data-aos="fade-right">
         Proyectos <span className="sideRight lineTrough"></span>
       </h1>
       <div className="containerr">

@@ -20,7 +20,7 @@ export const Data = [
   },
   {
     id: '02',
-    category: 'Colaborators',
+    category: 'Colaborador',
     url: Deezer,
     title: 'Clon Deezer',
     description: 'Proyecto Comaborativo desarrollado con Html5 y Css3',
@@ -47,7 +47,7 @@ export const Data = [
   },
   {
     id: '05',
-    category: 'Colaborators',
+    category: 'Colaborador',
     url: Semillas,
     title: 'Fundación Semillas',
     description: 'Proyecto Colaborativo desarrollado con Html5 y Css3',
@@ -56,7 +56,7 @@ export const Data = [
   },
   {
     id: '06',
-    category: 'Colaborators',
+    category: 'Colaborador',
     url: Tetris,
     title: 'Tetris',
     description: 'Proyecto Colaborativo desarrollado con Html5, Css3 y Js',
@@ -84,7 +84,7 @@ export const Data = [
   ,
   {
     id: '09',
-    category: 'Colaborators',
+    category: 'Colaborador',
     url: Wheel,
     title: 'Wheel Of Zoombie',
     description: 'Proyecto Colaborativo desarrollado con Html5, Css3 y Js',

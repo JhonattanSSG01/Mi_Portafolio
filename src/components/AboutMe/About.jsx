@@ -5,7 +5,7 @@ import AboutMe from "../../pages/assets/about.png";
 const About = () => {
   return (
     <>
-      <div className="aboutMe">
+      <div className="aboutMe" id="about">
         <h1 className="titlePrincipal" data-aos="fade-right">
           Sobre Mí <span className="sideRight lineTrough"></span>
         </h1>
@@ -25,7 +25,7 @@ const About = () => {
               actitud frente a los desafíos, actualmente soy desarrollador web
               full stack con manejo adecuado en lenguajes de programación HTML5,
               CSS3 y JS junto con librerías como React para la construcción de
-              aplicaciones web intuitivas mediante la metodología ágil - SRUM.
+              aplicaciones web intuitivas mediante la metodología ágil - SCRUM.
             </p>
           </section>
         </div>

@@ -21,8 +21,8 @@ const Contact = (props) => {
   const toggle = () => setModal(!modal);
   return (
     <>
-      <div className="contact">
-        <h1 className="titlePrincipal pt-3 pb-3" data-aos="fade-right">
+      <div className="contact" id="contact">
+        <h1 className="titlePrincipal mt-5 pt-3 pb-3" data-aos="fade-right">
           Contacto <span className="sideLeft lineTrough"></span>
         </h1>
         <div className="containerContact">

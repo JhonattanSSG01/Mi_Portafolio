@@ -7,6 +7,8 @@ html > body {
 header {
   width: 100%;
   box-shadow: 4px 0 30px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 50px 50px;
+  background-color: var(--colorPrimary);
 }
 
 header .nav > div {
@@ -216,7 +218,7 @@ header .nav > div {
 .contact > .titlePrincipal {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 32px;
+  font-size: clamp(30px, 5vw, 42px);
   color: var(--colorSecondary);
   position: relative;
 }
@@ -533,10 +535,16 @@ header .nav > div {
     height: 400px;
   }
   .texto {
-    font-size: 300px;
+    font-size: 250px;
     background-position-y: center;
   }
   .svg {
-    height: calc(100vh - 480px);
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .texto {
+    font-size: 300px;
   }
 }

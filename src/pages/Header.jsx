@@ -20,23 +20,35 @@ export default function Header() {
     <>
       <header>
         <Navbar className="nav" id="nav">
-          <NavbarBrand href="/" className="me-auto animate__animated animate__flash" style={{ width: "150px" }}>
+          <NavbarBrand
+            href="/"
+            className="me-auto animate__animated animate__flash"
+            style={{ width: "150px" }}
+          >
             <div className="logo"></div>
           </NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="iconNav" />
           <Collapse className="collapses" isOpen={!collapsed} navbar>
             <Nav className="navCollapse" navbar>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Sobre mí</NavLink>
+                <NavLink className="link" href="#about">
+                  Sobre mí
+                </NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Habilidades</NavLink>
+                <NavLink className="link" href="#skills">
+                  Habilidades
+                </NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Proyectos</NavLink>
+                <NavLink className="link" href="#projects">
+                  Proyectos
+                </NavLink>
               </NavItem>
               <NavItem className="navItemGlobal">
-                <NavLink className="link">Contacto</NavLink>
+                <NavLink className="link" href="#contact">
+                  Contacto
+                </NavLink>
               </NavItem>
               <NavItem className="navItem">
                 <NavLink
