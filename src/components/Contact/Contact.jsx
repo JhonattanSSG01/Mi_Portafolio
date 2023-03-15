@@ -30,11 +30,14 @@ const Contact = (props) => {
             className="mt-3 mb-3"
             src={ContactImg}
             alt="Imagen alusiva para contacto"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           />
           <section className="legendContact">
             <h1 className="titleTouch pt-5 pb-5">PONERSE EN CONTACTO</h1>
             <p className="contactDesc p-3 text-center">
-              Si te intereso mi perfil, uedes ponerte en contacto conmigo por medio de Gmail
+              Si te intereso mi perfil, uedes ponerte en contacto conmigo por
+              medio de Gmail
             </p>
           </section>
           <Button

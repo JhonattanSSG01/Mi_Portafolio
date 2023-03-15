@@ -4,7 +4,7 @@
   background-color: var(--colorFour);
 }
 
-.containerContact{
+.containerContact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,13 +19,13 @@
   font-family: var(--fontSecondary);
 }
 
-.titleTouch{
+.titleTouch {
   text-align: center;
   font-size: 32px;
   color: var(--colorSecondary);
 }
 
-.containerContact .buttonContact{
+.containerContact .buttonContact {
   margin: 0 15px;
   padding: 8px 10px;
   border-radius: 5px;
@@ -63,36 +63,32 @@
   transition: all 1s;
 }
 
-
-.legendContact{
+.legendContact {
   width: 100%;
   padding: 10px;
 }
 
-.containerContact button:hover{
+.containerContact button:hover {
   background-color: var(--colorSecondary);
   color: var(--colorPrimary);
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
-.contact img{
-    width: 50%;
-    opacity: .5;
-  }
-@media only screen and (min-width: 800px){
-
-  .contact img{
-    width: 30%;
-    
-  }
-
-  .containerContact{
-  flex-direction: row;
+.contact img {
+  width: 50%;
+  opacity: 0.5 !important;
 }
+@media only screen and (min-width: 800px) {
+  .contact img {
+    width: 25%;
+  }
+
+  .containerContact {
+    flex-direction: row;
+  }
 
   .containerContact button {
-  width: 40%;
-  padding: 8px 15px;
-}
-  
+    width: 40%;
+    padding: 8px 15px;
+  }
 }

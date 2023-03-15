@@ -4,6 +4,7 @@ html > body {
   background-color: var(--colorPrimary);
 }
 
+
 header {
   width: 100%;
   box-shadow: 4px 0 30px rgba(0, 0, 0, 0.2);
@@ -475,7 +476,22 @@ header .nav > div {
     background-attachment: fixed;
     font-family: "Anton", sans-serif;
     letter-spacing: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: writer 3s steps(50) normal both;
   }
+
+@keyframes writer {
+    from {
+      width: 0;
+      margin: auto;
+    }
+    to {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
 
   .container .containerBanner {
     flex-direction: row-reverse;
