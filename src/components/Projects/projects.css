@@ -5,6 +5,46 @@
   flex-wrap: wrap;
 }
 
+.containerFilter {
+  width: auto;
+  margin: 30px 0 50px 0;
+  text-align: center;
+}
+.projects .filter {
+  background-color: var(--colorFour);
+  padding: 14px 40px;
+  margin: 0 25px;
+  color: var(--colorSecondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed var(--colorFour);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.4s;
+}
+
+.projects .filter span:last-child {
+  display: none;
+}
+.projects .filter:hover {
+  transition: 0.4s;
+  border: 2px dashed var(--colorFour);
+  background-color: var(--colorSecondary);
+  color: var(--colorFour);
+}
+
+.projects .filter:active {
+  background-color: var(--colorSecondary);
+}
+
+.projects .filter h2 {
+  font-size: clamp(18px, 5vw, 25px);
+  margin: 0;
+  padding: 0;
+}
+
 .projects .card {
   width: 500px;
   height: 300px;
@@ -61,11 +101,11 @@
 }
 
 .textBox > .price {
-  font-size: clamp(18px, 4vw, 25px);;
+  font-size: clamp(18px, 4vw, 25px);
 }
 
 .textBox > span {
-  font-size: clamp(18px, 4vw, 25px);;
+  font-size: clamp(18px, 4vw, 25px);
   font-weight: 600;
   color: var(--colorDark);
 }
@@ -113,6 +153,12 @@
   font-size: 35px;
 }
 @media only screen and (max-width: 600px) {
+  .containerFilter {
+    margin: 10px 0 20px 0;
+  }
+  .projects .filter {
+    margin: 25px 0;
+  }
   .projects .card > .textBox {
     opacity: 1;
   }
