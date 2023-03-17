@@ -16,12 +16,14 @@ import {
   CardSubtitle,
   Button,
 } from "reactstrap";
+import SocialMedia from "../components/socialMedia/SocialMedia";
 
 // Componente Main
 export const Main = () => {
   return (
     <>
       <Header />
+      <SocialMedia />
       <div className="co">
         <div className="hero">
           <h1 className="texto">full stack</h1>
@@ -66,7 +68,7 @@ export const Main = () => {
           </div>
         </div>
       </div>
-
+    <main>
       <div className="containerMain">
         <hr className="lineBlue line" />
         <hr className="lineLigthBlue line" />
@@ -82,6 +84,7 @@ export const Main = () => {
 
         <Footer />
       </div>
+    </main>
     </>
   );
 };
