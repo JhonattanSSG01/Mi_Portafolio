@@ -6,10 +6,14 @@ html > body {
 
 
 header {
-  width: 100%;
-  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.2);
+  width: 98%;
+  margin: auto;
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.5);
   border-radius: 0px 0px 50px 50px;
   background-color: var(--colorPrimary);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header .nav > div {
@@ -487,7 +491,7 @@ header .nav > div {
       margin: auto;
     }
     to {
-      width: 80%;
+      width: 90%;
       margin: auto;
     }
   }
