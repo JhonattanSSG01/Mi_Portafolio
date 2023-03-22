@@ -30,22 +30,22 @@ export default function Header() {
         <Collapse className="collapses" isOpen={!collapsed} navbar>
           <Nav className="navCollapse" navbar>
             <NavItem className="navItemGlobal">
-              <NavLink className="link" href="#about">
+              <NavLink onClick={toggleNavbar} className="link" href="#about">
                 Sobre mí
               </NavLink>
             </NavItem>
             <NavItem className="navItemGlobal">
-              <NavLink className="link" href="#skills">
+              <NavLink onClick={toggleNavbar} className="link" href="#skills">
                 Habilidades
               </NavLink>
             </NavItem>
             <NavItem className="navItemGlobal">
-              <NavLink className="link" href="#projects">
+              <NavLink onClick={toggleNavbar} className="link" href="#projects">
                 Proyectos
               </NavLink>
             </NavItem>
             <NavItem className="navItemGlobal">
-              <NavLink className="link" href="#contact">
+              <NavLink onClick={toggleNavbar} className="link" href="#contact">
                 Contacto
               </NavLink>
             </NavItem>

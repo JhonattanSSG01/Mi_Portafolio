@@ -61,6 +61,7 @@
 
 .buttonContact span:not(hover) {
   transition: all 1s;
+  padding: 10px;
 }
 
 .legendContact {

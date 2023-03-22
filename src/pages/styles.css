@@ -4,12 +4,25 @@ html > body {
   background-color: var(--colorPrimary);
 }
 
+/* Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 8px;
+  overflow-x:hidden;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--colorFour);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--colorSecondary);
+  border-radius: 10px;
+}
 
 header {
-  width: 98%;
-  margin: auto;
+  width: auto;
   box-shadow: 8px 0 30px rgba(0, 0, 0, 0.5);
-  border-radius: 0px 0px 50px 50px;
+  border-radius: 0px 0px 10px 10px;
   background-color: var(--colorPrimary);
   position: sticky;
   top: 0;

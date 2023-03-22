@@ -164,6 +164,7 @@
   }
   .projects .card {
     height: 280px;
+    padding: 15px;
   }
   .projects .card > img {
     height: 65%;
