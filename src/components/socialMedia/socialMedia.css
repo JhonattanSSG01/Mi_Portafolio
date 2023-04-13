@@ -50,8 +50,14 @@
   background: var(--colorSecondary);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .containerSocial {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .containerSocial {
+    left: 5px;
   }
 }

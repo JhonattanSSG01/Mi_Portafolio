@@ -2,6 +2,7 @@
 .contact > .titlePrincipal {
   width: 100%;
   background-color: var(--colorFour);
+  z-index: -1;
 }
 
 .containerContact {
@@ -26,7 +27,7 @@
 }
 
 .containerContact .buttonContact {
-  margin: 0 15px;
+  margin: 0 50px;
   padding: 8px 10px;
   border-radius: 5px;
   text-align: center;
@@ -34,6 +35,7 @@
   font-size: 20px;
   color: var(--colorFour);
   transition: all 1s;
+  text-decoration: none;
 }
 
 .buttonContact span {
@@ -52,7 +54,7 @@
   box-shadow: 0 0.4em 0.1em 0.019em var(--colorFour);
 }
 
-.buttonContact span:hover {
+.buttonContact span:hover, .buttonContact:hover{
   transition: all 0.5s;
   transform: translate(0, 0.4em);
   box-shadow: 0 0 0 0 var(--colorFour);

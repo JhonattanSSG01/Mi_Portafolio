@@ -2,6 +2,7 @@
 .skills > .titlePrincipal {
   width: 100%;
   background-color: var(--colorFour);
+  z-index: -1;
 }
 
 .skillsToggle {

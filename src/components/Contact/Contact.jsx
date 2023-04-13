@@ -37,19 +37,27 @@ const Contact = (props) => {
             <h1 className="titleTouch pt-5 pb-5">PONERSE EN CONTACTO</h1>
             <p className="contactDesc p-3 text-center">
               Si te intereso mi perfil, puedes ponerte en contacto conmigo por
-              medio del Gmail
+              medio del correo electónico.
             </p>
           </section>
-          <Button
+          {/* <Button
             className="buttonContact"
             onClick={toggle}
             data-aos="fade-left"
             data-aos-duration="1500"
           >
             <span>Contactame</span>
-          </Button>
+          </Button> */}
+          <a
+            className="buttonContact"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            href="mailto:jhonattansaavedra01@gmail.com"
+          >
+            <span>Contáctame</span>
+          </a>
         </div>
-        <Modal
+        {/* <Modal
           isOpen={modal}
           modalTransition={{ timeout: 200 }}
           backdropTransition={{ timeout: 600 }}
@@ -106,7 +114,7 @@ const Contact = (props) => {
               Cancel
             </Button>
           </ModalFooter>
-        </Modal>
+        </Modal> */}
       </div>
     </>
   );

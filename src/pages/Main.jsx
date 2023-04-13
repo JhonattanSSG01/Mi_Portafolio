@@ -78,10 +78,8 @@ export const Main = () => {
         <Projects />
         <Contact />
 
-        <hr className="lineLigthBlue line" />
-        <hr className="lineLigthBlue line" />
         <hr className="lineLigthBlueC line" />
-
+        
         <Footer />
       </div>
     </main>

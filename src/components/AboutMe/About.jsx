@@ -21,9 +21,9 @@ const About = () => {
           </section>
           <section className="descPerfil">
             <p className="aboutDesc p-3">
-              Me considero una persona resiliente y proactiva con excelente
+              Me considero una persona resiliente y proactiva, con excelente
               actitud frente a los desafíos, actualmente soy desarrollador web
-              full stack con manejo adecuado en lenguajes de programación HTML5,
+              Full Stack con manejo adecuado en lenguajes de programación HTML5,
               CSS3 y JS junto con librerías como React para la construcción de
               aplicaciones web intuitivas mediante la metodología ágil - SCRUM.
             </p>
