@@ -57,10 +57,10 @@ export const Main = () => {
                 <Button className="cv">
                   <NavLink
                     className="link animate__animated animate__wobble"
-                    href="https://drive.google.com/file/d/1Yl1EB1KTZuDvQdxf6HzBjkfduWI7-z9E/view?usp=sharing"
+                    href="https://drive.google.com/file/d/12y9HqPuM4RAXuaDDbqXhCtPNwhTQ6xdG/view?usp=sharing"
                     target="_blank"
                   >
-                    Ver más
+                    Ver CV
                   </NavLink>
                 </Button>
               </CardBody>
@@ -68,21 +68,21 @@ export const Main = () => {
           </div>
         </div>
       </div>
-    <main>
-      <div className="containerMain">
-        <hr className="lineBlue line" />
-        <hr className="lineLigthBlue line" />
+      <main>
+        <div className="containerMain">
+          <hr className="lineBlue line" />
+          <hr className="lineLigthBlue line" />
 
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
 
-        <hr className="lineLigthBlueC line" />
-        
-        <Footer />
-      </div>
-    </main>
+          <hr className="lineLigthBlueC line" />
+
+          <Footer />
+        </div>
+      </main>
     </>
   );
 };

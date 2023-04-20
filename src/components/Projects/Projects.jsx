@@ -12,6 +12,7 @@ const Projects = () => {
     });
     setData(result);
   };
+
   return (
     <div className="projects" id="projects">
       <h1 className="titlePrincipal mt-5 pt-2 pb-2" data-aos="fade-right">

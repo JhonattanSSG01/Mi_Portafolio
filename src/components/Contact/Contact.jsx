@@ -36,7 +36,7 @@ const Contact = (props) => {
           <section className="legendContact">
             <h1 className="titleTouch pt-5 pb-5">PONERSE EN CONTACTO</h1>
             <p className="contactDesc p-3 text-center">
-              Si te intereso mi perfil, puedes ponerte en contacto conmigo por
+              Si te intereso mi perfil, puedes ponerte en contacto por
               medio del correo electónico.
             </p>
           </section>
