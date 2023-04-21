@@ -52,7 +52,7 @@ export default function Header() {
             <NavItem className="navItem">
               <NavLink
                 className="resume animate__animated animate__wobble"
-                href="https://drive.google.com/file/d/1lCYL7wPGwxaE4pGplWi6Zp1cjIQ3-GCX/view?usp=sharing"
+                href="https://drive.google.com/file/d/1UcNYQdz6G4cbkeHdqLLb3DildzpfxTcy/view?usp=sharing"
                 target="_blank"
               >
                 Hoja de Vida
