@@ -37,7 +37,7 @@ const Contact = (props) => {
             <h1 className="titleTouch pt-5 pb-5">PONERSE EN CONTACTO</h1>
             <p className="contactDesc p-3 text-center">
               Si te intereso mi perfil, puedes ponerte en contacto por
-              medio del correo electónico.
+              medio del correo electrónico.
             </p>
           </section>
           {/* <Button
