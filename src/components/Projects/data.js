@@ -7,6 +7,7 @@ import Tetris from './assets/tetris.png';
 import Todo from './assets/toList.png';
 import Tributo from './assets/webTributo.png'; 
 import Wheel from './assets/wheelOfDown.png'; 
+import Challenge from './assets/codeChallenge.png'; 
 
 export const Data = [
   {
@@ -23,7 +24,7 @@ export const Data = [
     category: 'Colaborador',
     url: Deezer,
     title: 'Clon Deezer',
-    description: 'Proyecto Comaborativo desarrollado con Html5 y Css3',
+    description: 'Proyecto Colaborativo desarrollado con Html5 y Css3',
     gitHub: 'https://github.com/JhonattanSSG01/Deezer.git',
     deploy: 'https://jhonattanssg01.github.io/Deezer/'
   },
@@ -90,5 +91,15 @@ export const Data = [
     description: 'Proyecto Colaborativo desarrollado con Html5, Css3 y Js',
     gitHub: 'https://gitlab.com/prueba776/prueba-proyecto.git',
     deploy: 'https://lambent-axolotl-7d7967.netlify.app'
+  }
+  ,
+  {
+    id: '10',
+    category: 'Personal',
+    url: Challenge,
+    title: 'Code Challenge',
+    description: 'Proyecto Personales desarrollado con Html5, Saas, Js',
+    gitHub: 'https://github.com/JhonattanSSG01/Code_Challenge.git',
+    deploy: 'https://jhonattanssg01.github.io/Code_Challenge/'
   }
 ]
