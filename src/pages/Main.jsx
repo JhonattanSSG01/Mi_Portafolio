@@ -57,7 +57,7 @@ export const Main = () => {
                 <Button className="cv">
                   <NavLink
                     className="link animate__animated animate__wobble"
-                    href="https://drive.google.com/file/d/1YBa2pdavsoaSsBlZtzEEneD1m4xmKIWG/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1j38TEUtcTNMpHgkV-Bavei_GeDOvlX2S/view?usp=sharing"
                     target="_blank"
                   >
                     Ver CV
