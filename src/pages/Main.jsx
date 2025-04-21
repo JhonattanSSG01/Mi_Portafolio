@@ -49,15 +49,18 @@ export const Main = () => {
                   </small>
                 </CardSubtitle>
                 <CardText className="description sizeText">
-                  Soy un desarrollador web FullStack en crecimiento centrado en
-                  el Front-end pero con conocimientos básicos en Back-end. Me
-                  apasiona la tecnología y disfrutar el poder construir cosas
-                  basadas en ideas imaginativas a través de la creatividad.
+                  Soy un desarrollador web en constante evolución, especializado
+                  en Front-end. Me apasiona
+                  el desarrollo de interfaces interactivas, accesibles y
+                  optimizadas, aplicando principios de diseño, usabilidad y
+                  rendimiento. Disfruto convertir ideas conceptuales en
+                  soluciones funcionales, utilizando tecnologías modernas y
+                  buenas prácticas de desarrollo.
                 </CardText>
                 <Button className="cv">
                   <NavLink
                     className="link animate__animated animate__wobble"
-                    href="https://drive.google.com/file/d/1hSqX-w8968jo-MiUMqdTxqpdiqK_j5pz/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1nAPuOyOBKk33h7yEbEXTMdz16knVQRBw/view?usp=sharing"
                     target="_blank"
                   >
                     Ver CV
